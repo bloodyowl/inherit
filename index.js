@@ -1,13 +1,6 @@
-var fnToString = Function.prototype.toString
-var isNativeRE = RegExp('^' +
-    fnToString.call(toString)
-      // escape RegExp special chars
-      .replace(/([.*+?^=!:$(){}|[\]\/\\])/g, "\\$1")
-      .replace(/toString/, ".*?")
-  )
+var isNative = require("./lib/isNative")
 
-
-if(Object.create && isNativeRE.test(Object.create)) {
+if(isNative(Object.create)) {
   module.exports = function(object){
     return Object.create(object)
   }

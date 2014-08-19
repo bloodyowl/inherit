@@ -1,6 +1,6 @@
 {
   "name": "bloody-inherit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "inherit from an object",
   "main": "index.js",
   "directories": {
