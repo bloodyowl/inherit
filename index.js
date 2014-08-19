@@ -1,4 +1,4 @@
-var isNative = require("./lib/isNative")
+var isNative = require("bloody-isnative")
 
 if(isNative(Object.create)) {
   module.exports = function(object){

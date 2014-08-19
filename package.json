@@ -1,6 +1,6 @@
 {
   "name": "bloody-inherit",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "inherit from an object",
   "main": "index.js",
   "directories": {
@@ -22,8 +22,8 @@
   "devDependencies": {
     "tape": "^2.14.0"
   },
-  "testling" : {
-    "files" : "test/**.js",
+  "testling": {
+    "files": "test/**.js",
     "browsers": [
       "ie/8..10",
       "chrome/22..latest",
@@ -34,5 +34,8 @@
       "ipad/6..latest",
       "android-browser/latest"
     ]
+  },
+  "dependencies": {
+    "bloody-isnative": "^1.0.0"
   }
 }
